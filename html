@@ -1,0 +1,618 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+            <meta charset="utf-8">
+        <title>Computer science CGPA</title>
+<style>
+
+body{
+    background-image:url("cia.jpg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    font-family:arial;
+}
+@keyframes example {
+   0%  {background-color: red;}
+   50%  {background-color: yellow;}
+   70%  {background-color: blue;}
+   100% {background-color: green;}
+ }
+p{
+   padding: 10px;    
+   border: 2px solid green;
+   height:60px;
+   width:100%;
+   overflow:auto;
+   box-shadow: 10px 10px #888888;
+   border-radius:20px 0 B20px 20px;
+   background: -moz-radial-gradient(circle, green, yellow, blue);
+   transition:height 3s;
+   background-color:#32CD32;
+   transform:;
+   transform-origin: 25% 75%;
+   animation-name:example;
+   animation-duration:100000000s;
+   font-size:5mm;
+  }
+  P.X{transform:rotateX(150deg);}
+  P.Y{transform:rotateY(150deg);}
+  P.Z{transform:rotateZ(150deg);}
+table, th, td {
+    border-collapse: collapse;
+    border-style:ridge;
+    border-radius: 60px;
+    border-color: brown;
+    border-block-end-color: brown;
+    border-block-start-color: brown;
+    border-bottom-color: brown;
+    border-top-color: brown;
+    border-inline-end-color: brown;
+    border-inline-start-color: brown;
+    border-left-color: brown;
+    border-right-color: brown;
+}
+th, td {
+    padding: 5px;
+    background-color: cyan;
+    font-size:5mm;
+}
+th {
+    text-align: left;
+    font-family: cursive;
+    color: darkgreen;
+    background-color: gold;
+    font-size: 30px;
+}
+a { color:blue; 
+    background-color:red;
+     text-decoration:underline;
+    font-family: cursive;
+font-size: large;
+}
+body{
+    width:290px;
+background-color:whitesmoke;}
+video {
+    width:100%; 
+    height:500px;
+}
+#slide {
+    width:700px;
+    height:500px;
+}
+img.cer{
+    width:800px;
+    height:900px;
+}
+video.cer{
+    width:800px;
+    height:600px;
+}
+h2{
+    font-size: 8mm;
+    text-decoration:underline;
+    color: darkgreen;
+}
+footer, header{
+    font-size: 5mm;
+    color: darkgreen;
+    width:100%;
+}
+hi {
+border-block-end-style: groove;
+border: #32CD32;
+background-color: coral;
+box-align: left;
+}
+#shr{
+    background-color: goldenrod;
+   height: 58px;
+   width: 1355px; 
+}
+p.tra:hover{
+width: 150px ; 
+}
+li{
+    font-size:5mm;
+}
+</style>
+<script>
+  var one= document.getElementById("a")
+   function transa(){
+    var one= document.getElementById("a");
+      var sel;
+      for (var i=0, len=one.options.length; i<len; i++){
+          sel= one.options[i];
+          if (sel.selected==true){
+              break;
+          }
+      }
+      document.getElementById("aload").innerHTML=sel.value;
+      console.log(sel);
+   }
+   function transb(){
+    var two= document.getElementById("b");
+      var sel;
+      for (var i=0, len=two.options.length; i<len; i++){
+          sel= two.options[i];
+          if (sel.selected==true){
+              break;
+          }
+      }
+      document.getElementById("bload").innerHTML=sel.value;
+      console.log(sel);
+   } 
+   function transc(){
+    var three= document.getElementById("c");
+      var sel;
+      for (var i=0, len=three.options.length; i<len; i++){
+          sel= three.options[i];
+          if (sel.selected==true){
+              break;
+          }
+      }
+      document.getElementById("cload").innerHTML=sel.value;
+      console.log(sel);
+   } 
+   function transd(){
+    var one= document.getElementById("d");
+      var sel;
+      for (var i=0, len=one.options.length; i<len; i++){
+          sel= one.options[i];
+          if (sel.selected==true){
+              break;
+          }
+      }
+      document.getElementById("dload").innerHTML=sel.value;
+      console.log(sel);
+   } 
+   function transe(){
+    var one= document.getElementById("e");
+      var sel;
+      for (var i=0, len=one.options.length; i<len; i++){
+          sel= one.options[i];
+          if (sel.selected==true){
+              break;
+          }
+      }
+      document.getElementById("eload").innerHTML=sel.value;
+      console.log(sel);
+   } 
+   function transf(){
+    var one= document.getElementById("f");
+      var sel;
+      for (var i=0, len=one.options.length; i<len; i++){
+          sel= one.options[i];
+          if (sel.selected==true){
+              break;
+          }
+      }
+      document.getElementById("fload").innerHTML=sel.value;
+      console.log(sel);
+   } 
+   function transg(){
+    var one= document.getElementById("g");
+      var sel;
+      for (var i=0, len=one.options.length; i<len; i++){
+          sel= one.options[i];
+          if (sel.selected==true){
+              break;
+          }
+      }
+      document.getElementById("gload").innerHTML=sel.value;
+      console.log(sel);
+   } 
+   function transh(){
+    var one= document.getElementById("h");
+      var sel;
+      for (var i=0, len=one.options.length; i<len; i++){
+          sel= one.options[i];
+          if (sel.selected==true){
+              break;
+          }
+      }
+      document.getElementById("hload").innerHTML=sel.value;
+      console.log(sel);
+   }
+  function showgp(){
+    var test = document.getElementById("air");
+    function getid (test){
+        var opt1;
+        for (var i=0, len=test.options.length; i<len; i++){
+            opt1= test.options[i];
+            if (opt1.selected==true){
+                break;
+            }
+        }
+      return opt1;
+    }
+    var air= getid(test);
+    var aii= parseInt(air.value,10)
+    var tesb = document.getElementById("bii");
+    function getid (tesb){
+        var opt2;
+        for (var i=0, len=tesb.options.length; i<len; i++){
+            opt2= tesb.options[i];
+            if (opt2.selected==true){
+                break;
+            }
+        }
+      return opt2;
+    }
+    var bir= getid(tesb);
+    var bii=parseInt(bir.value,10);
+
+ var tesc = document.getElementById("cii");
+    function getid (tesc){
+        var opt3;
+        for (var i=0, len=tesc.options.length; i<len; i++){
+            opt3= tesc.options[i];
+            if (opt3.selected==true){
+                break;
+            }
+        }
+      return opt3;
+    }
+    var cir= getid(tesc)
+    var cii=parseInt(cir.value,10);
+
+    var tesd = document.getElementById("dii");
+    function getid (tesd){
+        var opt4;
+        for (var i=0, len=tesd.options.length; i<len; i++){
+            opt4= tesd.options[i];
+            if (opt4.selected==true){
+                break;
+            }
+        }
+      return opt4;
+    }
+    var dir= getid(tesd)
+    var dii=parseInt(dir.value,10); 
+    var tese = document.getElementById("eii");
+    function getid (tese){
+        var opt5;
+        for (var i=0, len=tese.options.length; i<len; i++){
+            opt5= tese.options[i];
+            if (opt5.selected==true){
+                break;
+            }
+        }
+      return opt5;
+    }
+    var eir= getid(tese)
+    var eii=parseInt(eir.value, 10); 
+    var tesf = document.getElementById("fii");
+    function getid (tesf){
+        var opt6;
+        for (var i=0, len=tesf.options.length; i<len; i++){
+            opt6= tesf.options[i];
+            if (opt6.selected==true){
+                break;
+            }
+        }
+      return opt6;
+    }
+    var fir= getid(tesf)
+    var fii=parseInt(fir.value,10); 
+    var tesg = document.getElementById("gii");
+    function getid (tesg){
+        var opt7;
+        for (var i=0, len=tesg.options.length; i<len; i++){
+            opt7= tesg.options[i];
+            if (opt7.selected==true){
+                break;
+            }
+        }
+      return opt7;
+    }
+    var gir= getid(tesg)
+    var gii=parseInt(gir.value,10); 
+    var tesh = document.getElementById("hii");
+    function getid (tesh){
+        var opt8;
+        for (var i=0, len=tesh.options.length; i<len; i++){
+            opt8= tesh.options[i];
+            if (opt8.selected==true){
+                break;
+            }
+        }
+      return opt8;
+    }
+    var hir= getid(tesh)
+    var hii=parseInt(hir.value,10); 
+    var tas = document.getElementById("ai");
+    function getid (tas){
+        var opta;
+        for (var i=0, len=tas.options.length; i<len; i++){
+            opta= tas.options[i];
+            if (opta.selected==true){
+                break;
+            }
+        }
+      return opta;
+    }
+    var ar= document.getElementById("aload").innerHTML;
+    var ai=parseInt(ar,10);
+    var br= document.getElementById("bload").innerHTML;
+    var bi=parseInt(br,10);
+    var cr= document.getElementById("cload").innerHTML;
+    var ci=parseInt(cr,10);
+    var dr= document.getElementById("dload").innerHTML;
+    var di=parseInt(dr,10);
+    var er= document.getElementById("eload").innerHTML;
+    var ei=parseInt(er,10);
+    var fr= document.getElementById("fload").innerHTML;
+    var fi=parseInt(fr,10);
+    var gr= document.getElementById("gload").innerHTML;
+    var gi=parseInt(gr,10);
+    var hr= document.getElementById("hload").innerHTML;
+    var hi=parseInt(hr,10);
+    
+    var acs= aii*ai;
+    var bs= bii*bi;
+    var cs= cii*ci;
+    var ds= dii*di;
+    var es= eii*ei;
+    var fs= fii*fi;
+    var gs= gii*gi;
+    var hs= hii*hi;
+    var ssum= acs + bs + cs + ds + es + fs + gs + hs;
+    var uload= ai + bi + ci + di + ei + fi + gi + hi;
+    var GN= ssum /uload;
+    var GP= GN.toFixed(5);
+    alert("Your GP is "+GP+"")
+    document.getElementById("gp").innerHTML=GP;
+  }
+  function remark(){
+    var name= document.getElementById("name").innerHTML=(prompt("What is your name?"));
+    var GP= parseFloat(document.getElementById("gp").innerHTML,10);
+    var fclas="you have a first class GP, keep it up";
+    var sclas="you have a second class upper, go for glory";
+    var sclasl="you have a second class lower";
+    var tclas=" you have a third class";
+    var bad="To be honest, you really didnt do well";
+    var genius="You are a genius";
+    console.log(GP)
+    console.log(typeof(GP))
+ if(GP>=4.5 && GP<5){
+    alert(""+name+",you have a first class GP, keep it up")
+    document.getElementById("remark").innerHTML=fclas;
+ }else if (GP>=3.5 && GP<4.5){
+    alert(""+name+", you have a second class upper, go for glory");
+    document.getElementById("remark").innerHTML=sclas;
+ }else if(GP>=2.5 && GP<3.5){
+     alert(""+name+", you have a second class lower");
+     document.getElementById("remark").innerHTML=sclasl;
+ }else if(GP>=1.5 && GP<2.5){
+     alert(""+name+", you have a third class");
+     document.getElementById("remark").innerHTML=tclas;
+ }else if(GP<1.5){
+     alert(""+name+", To be honest, you really didnt do well");
+     document.getElementById("remark").innerHTML=bad;
+ }else if(GP==5){
+     alert(""+name+", You are a Genius ")
+     document.getElementById("remark").innerHTML=genius;
+ }    }
+</script>
+    </head>
+    <body>
+    <h1>Welcome Back</h1>
+    <p>You can check your CGPA here</p>
+    <form>
+    <table style="width:100%" height="700px" id="trynow" ><caption> <strong id="name">First year 1<sup>st</sup> semester GP analysis</strong></caption>
+        <tr><th><b>Course</b></th>
+            <th><b>Unit Load</b></th>
+            <th><b>Grade</b></th>
+            </tr>
+            <tr>
+              <td><b>
+                <select name="a" id="a" onchange="transa()"  width="50px" height="50px">
+                    <option>--</option>
+                    <option value="3">MTH 121</option>
+                    <option value="3">MTH 111</option>
+                    <option value="2">STA 131</option>
+                    <option value="2">GSP 111</option>
+                    <option value="2">PHY 115</option>
+                    <option value="3">COS 103</option>
+                    <option value="2">COS 105</option>
+                    <option value="2">GSP 101</option>
+                </select>
+                </b></td>
+              <td id="aload"></td>
+              <td>
+                <select name="air" id="air">
+                        <option value="">--</option>
+                    <option value="5">a</option>
+                    <option value="4">b</option>
+                    <option value="3">c</option>
+                    <option value="2">d</option>
+                    <option value="0">f</option>
+                </select>
+                </b></td>
+              <button></button>
+            </tr>
+            <tr>
+              <td><b></b>
+                <select id="b" onchange="transb()">
+                        <option value="">--</option>
+               <option value="3">MTH 121</option>
+                <option value="3">MTH 111</option>
+                    <option value="2">STA 131</option>
+                    <option value="2">GSP 111</option>
+                    <option value="2">PHY 115</option>
+                    <option value="3">COS 103</option>
+                    <option value="2">COS 105</option>
+                    <option value="2">GSP 101</option>
+                </select>
+                </b></td>
+              <td id="bload"></td>
+              <td>
+                <select name="Grade" id="bii">
+                        <option value="">--</option>
+                    <option value="5">a</option>
+                    <option value="4" >b</option>
+                        <option value="3">c</option>
+                        <option value="2" >d</option>
+                        <option value="0">f</option>
+                </select>
+                </b></td>
+            </tr> <tr>
+              <td><b>
+                <select id="c" onchange="transc()"> 
+                        <option value="">--</option>
+               <option value="3">MTH 121</option>
+                <option value="3">MTH 111</option>
+                    <option value="2">STA 131</option>
+                    <option value="2">GSP 111</option>
+                    <option value="2">PHY 115</option>
+                    <option value="3">COS 103</option>
+                    <option value="2">COS 105</option>
+                    <option value="2">GSP 101</option>
+                </select>
+                </b></td>
+              <td id="cload"></td>
+              <td>
+                <select name="Grade" id="cii">
+                        <option value="">--</option>
+                    <option value="5">a</option>
+                    <option value="4">b</option>
+                        <option value="3">c</option>
+                        <option value="2">d</option>
+                        <option value="0">f</option>
+                </select>
+                </b></td>
+            </tr> <tr>
+              <td>
+                <select id="d" onchange="transd()">
+                        <option value="">--</option>
+               <option value="3">MTH 121</option>
+                <option value="3">MTH 111</option>
+                    <option value="2">STA 131</option>
+                    <option value="2">GSP 111</option>
+                    <option value="2">PHY 115</option>
+                    <option value="3">COS 103</option>
+                    <option value="2">COS 105</option>
+                    <option value="2">GSP 101</option>
+                </select>
+                </b></b></td>
+              <td id="dload"></td>
+              <td>
+                <select name="Grade" id="dii">
+                        <option value="">--</option>
+                    <option value="5">a</option>
+                    <option value="4">b</option>
+                        <option value="3">c</option>
+                        <option value="2">d</option>
+                        <option value="0">f</option>
+                </select>
+                </b></td>
+            </tr> <tr>
+              <td>
+                <select id="e" onchange="transe()">
+                        <option value="">--</option>
+               <option value="3">MTH 121</option>
+                <option value="3">MTH 111</option>
+                    <option value="2">STA 131</option>
+                    <option value="2">GSP 111</option>
+                    <option value="2">PHY 115</option>
+                    <option value="3">COS 103</option>
+                    <option value="2">COS 105</option>
+                    <option value="2">GSP 101</option>
+                </select>
+                </b></b></td>
+              <td id="eload"></td>
+              <td>
+                <select name="Grade" id="eii">
+                        <option value="">--</option>
+                    <option value="5">a</option>
+                    <option value="4">b</option>
+                        <option value="3">c</option>
+                        <option value="2">d</option>
+                        <option value="0">f</option>
+                </select>
+                </b></td>
+            </tr> <tr>
+              <td>
+                <select id="f" onchange="transf()">
+                        <option value="">--</option>
+               <option value="3">MTH 121</option>
+                <option value="3">MTH 111</option>
+                    <option value="2">STA 131</option>
+                    <option value="2">GSP 111</option>
+                    <option value="2">PHY 115</option>
+                    <option value="3">COS 103</option>
+                    <option value="2">COS 105</option>
+                    <option value="2">GSP 101</option>
+                </select>
+                </b></td>
+              <td id="fload"></td>
+              <td>
+                <select name="Grade" id="fii">
+                        <option value="">--</option>
+                    <option value="5">a</option>
+                    <option value="4">b</option>
+                        <option value="3">c</option>
+                        <option value="2">d</option>
+                        <option value="0">f</option>
+                </select>
+                </b></td>
+            </tr> <tr>
+              <td>
+                <select id="g" onchange="transg()">
+                        <option value="">--</option>
+               <option value="3">MTH 121</option>
+                <option value="3">MTH 111</option>
+                    <option value="2">STA 131</option>
+                    <option value="2">GSP 111</option>
+                    <option value="2">PHY 115</option>
+                    <option value="3">COS 103</option>
+                    <option value="2">COS 105</option>
+                    <option value="2">GSP 101</option>
+                </select>
+                </b></td>
+              <td id="gload"></td>
+              <td >
+                <select name="Grade" id="gii">
+                        <option value="">--</option>
+                    <option value="5">a</option>
+                    <option value="4">b</option>
+                        <option value="3">c</option>
+                        <option value="2">d</option>
+                        <option value="0">f</option>
+                </select>
+                </b></td>
+            </tr> <tr>
+              <td>
+                <select id="h" onchange="transh()">
+                        <option value="">--</option>
+               <option value="3">MTH 121</option>
+                <option value="3">MTH 111</option>
+                    <option value="2">STA 131</option>
+                    <option value="2">GSP 111</option>
+                    <option value="2">PHY 115</option>
+                    <option value="3">COS 103</option>
+                    <option value="2">COS 105</option>
+                    <option value="2">GSP 101</option>
+                </select>
+                </b></td>
+              <td id="hload"></td>
+              <td><b id="h"><b id="a">
+                <select name="Grade" id="hii">
+                        <option value="">--</option>
+                    <option value="5">a</option>
+                    <option value="4">b</option>
+                        <option value="3">c</option>
+                        <option value="2">d</option>
+                        <option value="0">f</option>
+                </select>
+            
+                </b></td>
+            </tr>
+    </table>
+    <h2 id="gp" color="red"></h2>
+</form>
+    <p><button onclick="showgp()" width="100px">print gp</button></p><button onclick="remark()">Show Remark</button>
+    <p id="remark"></p>
+    </body>
+</html>
