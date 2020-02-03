@@ -1,0 +1,130 @@
+body{
+    background-image:url("cia.jpg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    font-family:arial;
+}
+@keyframes example {
+   0%  {background-color: red;}
+   50%  {background-color: yellow;}
+   70%  {background-color: blue;}
+   100% {background-color: green;}
+ }
+q{
+   padding: 10px;    
+   border: 2px solid green;
+   height:60px;
+   width:1300px;
+   overflow:auto;
+   box-shadow: 10px 10px #888888;
+   border-radius:20px 0 B20px 20px;
+   background: -moz-radial-gradient(circle, green, yellow, blue);
+   transition:height 3s;
+   background-color:#32CD32;
+   transform-origin: 25% 75%;
+   animation-name:example;
+   animation-duration:5s;
+   font-size:5mm;
+  }
+  P.X{transform:rotateX(150deg);}
+  P.Y{transform:rotateY(150deg);}
+  P.Z{transform:rotateZ(150deg);}
+table, th, td {
+    border-collapse: collapse;
+    border-style:ridge;
+    border-radius: 60px;
+    border-color: brown;
+    border-block-end-color: brown;
+    border-block-start-color: brown;
+    border-bottom-color: brown;
+    border-top-color: brown;
+    border-inline-end-color: brown;
+    border-inline-start-color: brown;
+    border-left-color: brown;
+    border-right-color: brown;
+}
+th, td {
+    padding: 5px;
+    background-color: cyan;
+    font-size:5mm;
+}
+th {
+    text-align: left;
+    font-family: cursive;
+    color: darkgreen;
+    background-color: gold;
+    font-size: 30px;
+}
+a { 
+    color:blue;
+    text-decoration:underline;
+    font-family: sans-serif;
+    font-size: medium;
+}
+body{
+    width:290px;
+background-color:whitesmoke;}
+video {
+    width:100%; 
+    height:500px;
+}
+#slide {
+    width:700px;
+    height:500px;
+}
+#submit{
+    background-color: darkkhaki;
+    padding: 2px, 1px;
+    display: inline-block;
+}
+img.cer{
+    width:100%;
+    height:100%;
+}
+video.cer{
+    width:800px;
+    height:600px;
+}
+h2{
+    font-size: 8mm;
+    text-decoration:underline;
+    color: darkgreen;
+}
+footer, header{
+    font-size: 5mm;
+    color: darkgreen;
+    width:100%;
+}
+hi {
+border-block-end-style: groove;
+border: #32CD32;
+background-color: coral;
+box-align: left;
+}
+#shr{
+    background-color: goldenrod;
+   height: 58px;
+   width: 1355px; 
+}
+li{
+    font-size:5mm;
+}
+div.downdiv{
+    background-color: darkslategray;
+    height:300px;
+    width:1355px;
+    color:white;
+}
+span{
+    width:100%;
+}
+.container{
+    display:grid;
+    width:100%;
+    grid-gap:50px;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(1,400px);
+}
+.hidden {
+    display: none;
+    }

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+            <link type="text/css" rel="stylesheet" href="tryme.css">
+            <meta charset="utf-8">
+        <title>CHECK YOUR GP</title>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="js2.js"></script>
+    </head>
+    <div id="select">
+        <h3>How many courses do you offer this semester ?</h3>
+        <input type="number" min="6" max="12" id="courseno" value="5"><br>
+        <input type="button" class="hidden" id="next" value="next">
+</div>
+<div>
+    <table style="width:1000px" height="700px" id="table" class="hidden"><caption> <strong>First year 1<sup>st</sup> semester GP analysis</strong></caption>
+        <tr><th><b>Course</b></th>
+            <th><b>Unit Load</b></th>
+            <th><b>Grade</b></th></tr>
+        </table>
+</div>
+<button id="print" class="hidden">print GP</button>
+<p id="remark"></p>
+    <body>
+    </html>
